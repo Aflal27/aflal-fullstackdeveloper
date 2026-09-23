@@ -39,7 +39,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const seoMeta = {
-  title: 'Aflal — Full Stack Developer | Next.js, React, TypeScript, Node.js',
+  title: 'Aflal - Full Stack Developer | Next.js, React, TypeScript, Node.js',
   description:
     'Full Stack Developer with 2+ years of experience building production web and mobile applications using Next.js, React, TypeScript, Node.js and MySQL.',
   canonical: 'https://example.com/',
