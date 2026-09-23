@@ -1,13 +1,14 @@
 import React from 'react';
-import { MapPinIcon, BriefcaseIcon, CodeIcon } from 'lucide-react';
+import { MapPinIcon, BriefcaseIcon, GraduationCapIcon, LanguagesIcon } from 'lucide-react';
 import { Reveal } from './ui/Reveal';
 import { photos, profile } from '../data/site';
 
 const facts = [
-{ icon: MapPinIcon, label: 'Based in Sri Lanka' },
-{ icon: BriefcaseIcon, label: 'Digital Marketing Executive' },
-{ icon: CodeIcon, label: 'Full-stack development background' }];
-
+  { icon: MapPinIcon, label: 'Colombo, Sri Lanka' },
+  { icon: BriefcaseIcon, label: '2+ Years Experience' },
+  { icon: GraduationCapIcon, label: 'HND Software Engineering' },
+  { icon: LanguagesIcon, label: 'English · Tamil' },
+];
 
 export function About() {
   return (
@@ -18,15 +19,15 @@ export function About() {
             <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
               <div
                 aria-hidden="true"
-                className="absolute -bottom-4 left-0 h-32 w-32 rounded-3xl bg-sun-100 sm:-bottom-5 sm:-left-5" />
-              
-              <div className="grain relative overflow-hidden rounded-4xl border border-line bg-coral-50 shadow-lift">
+                className="absolute -bottom-4 left-0 h-32 w-32 rounded-3xl bg-violet-100 sm:-bottom-5 sm:-left-5"
+              />
+              <div className="grain relative overflow-hidden rounded-4xl border border-line bg-violet-50 shadow-lift">
                 <img
                   src={photos.about}
-                  alt={`${profile.firstName}, ${profile.role}, at his desk`}
+                  alt={`${profile.name}, Full Stack Developer`}
                   className="aspect-[4/5] w-full object-cover"
-                  loading="lazy" />
-                
+                  loading="lazy"
+                />
               </div>
             </div>
           </Reveal>
@@ -37,40 +38,42 @@ export function About() {
             </Reveal>
             <Reveal delay={0.06}>
               <h2 className="mt-4 font-display text-display-lg font-extrabold text-ink">
-                I work where marketing meets technology.
+                I build production apps, not just prototypes.
               </h2>
             </Reveal>
             <Reveal delay={0.12}>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-                I combine creative marketing, paid advertising, SEO and hands-on web development to build digital
-                campaigns around real business goals. My approach is practical: understand the audience, create the
-                right content, launch the campaign, measure what happens and improve from the data.
+                Full Stack Developer with 2+ years of professional experience designing, building and deploying
+                real-world web and mobile applications. I work independently in remote environments and focus on
+                clean, scalable, SEO-friendly code that solves actual business problems - from e-commerce and
+                booking systems to point-of-sale software.
               </p>
             </Reveal>
-            <Reveal delay={0.18}>
-              <ul className="mt-10 grid gap-3 sm:grid-cols-3">
+            <Reveal delay={0.16}>
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-mute">
+                My background in digital marketing gives me an edge: I understand what users expect and what
+                businesses need to grow, so I build accordingly.
+              </p>
+            </Reveal>
+            <Reveal delay={0.22}>
+              <ul className="mt-10 grid gap-3 sm:grid-cols-2">
                 {facts.map((fact) => {
                   const Icon = fact.icon;
                   return (
                     <li
                       key={fact.label}
-                      className="rounded-2xl border border-line bg-canvas px-5 py-5 text-sm font-semibold text-ink">
-                      
+                      className="rounded-2xl border border-line bg-canvas px-5 py-4 text-sm font-semibold text-ink"
+                    >
                       <Icon className="mb-3 h-4 w-4 text-violet-600" aria-hidden="true" />
                       {fact.label}
-                    </li>);
-
+                    </li>
+                  );
                 })}
               </ul>
-            </Reveal>
-            <Reveal delay={0.24}>
-              <p className="mt-6 text-sm text-ink-mute">
-                {profile.experience} · Currently at {profile.company}
-              </p>
             </Reveal>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

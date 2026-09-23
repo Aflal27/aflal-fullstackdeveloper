@@ -5,7 +5,7 @@ import { Reveal } from './ui/Reveal';
 import { MagneticLink } from './ui/Buttons';
 import { photos, profile } from '../data/site';
 
-const CONTACT_EMAIL = 'mohamedaflal@gmail.com';
+const CONTACT_EMAIL = 'mohamedaflal6719@gmail.com';
 const WHATSAPP_NUMBER = '94750241025'; // no + prefix for wa.me URL
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
@@ -50,11 +50,11 @@ export function Contact() {
               <p className="text-label font-semibold uppercase text-violet-600">Contact</p>
             </Reveal>
             <Reveal delay={0.06}>
-              <h2 className="mt-4 font-display text-display-lg font-extrabold text-ink">Let&apos;s grow something.</h2>
+              <h2 className="mt-4 font-display text-display-lg font-extrabold text-ink">Let&apos;s build something.</h2>
             </Reveal>
             <Reveal delay={0.12}>
               <p className="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft">
-                Need someone who can handle content, campaigns, analytics, SEO and the technology behind the website?
+                Looking for a Full Stack Developer who can build and ship production-ready web or mobile applications?
               </p>
             </Reveal>
             <Reveal delay={0.18}>
@@ -173,7 +173,7 @@ export function Contact() {
                     value={form.message}
                     onChange={handleChange}
                     className="mt-2 w-full resize-none rounded-2xl border border-line bg-canvas px-4 py-3 text-sm text-ink transition-colors duration-200 placeholder:text-ink-faint focus:border-violet-500"
-                    placeholder="Campaigns, content, SEO, website work…" />
+                    placeholder="Your project — web app, mobile app, e-commerce…" />
                   
                 </div>
               </div>
@@ -220,7 +220,7 @@ export function Contact() {
                   transition={{ duration: 0.2, ease: EASE }}
                   className="text-sm text-ink-soft">
                   
-                    Thanks, {form.name.split(' ')[0]} — your email client should have opened. If not, reach out directly at{' '}
+                    Thanks, {form.name.split(' ')[0]} - your email client should have opened. If not, reach out directly at{' '}
                     <a href={`mailto:${CONTACT_EMAIL}`} className="underline hover:text-violet-600">{CONTACT_EMAIL}</a>.
                   </motion.p> :
                 null}

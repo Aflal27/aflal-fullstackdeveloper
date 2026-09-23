@@ -22,8 +22,8 @@ function upsertLink(rel: string, href: string) {
 }
 
 /**
- * Applies page metadata, Open Graph / Twitter tags and Person +
- * Organization structured data for the single-page portfolio.
+ * Applies page metadata, Open Graph / Twitter tags and Person
+ * structured data for the single-page portfolio.
  */
 export function useSeoMeta() {
   useEffect(() => {
@@ -32,7 +32,7 @@ export function useSeoMeta() {
 
     upsertMeta('name', 'description', seoMeta.description);
     upsertMeta('name', 'robots', 'index, follow');
-    upsertMeta('name', 'author', profile.firstName);
+    upsertMeta('name', 'author', profile.name);
     upsertMeta('property', 'og:type', 'website');
     upsertMeta('property', 'og:title', seoMeta.title);
     upsertMeta('property', 'og:description', seoMeta.description);
@@ -46,36 +46,31 @@ export function useSeoMeta() {
 
     const structuredData = {
       '@context': 'https://schema.org',
-      '@graph': [
-      {
-        '@type': 'Person',
-        name: profile.firstName,
-        jobTitle: profile.role,
-        description: seoMeta.description,
-        image: seoMeta.image,
-        address: { '@type': 'PostalAddress', addressCountry: 'LK', addressRegion: profile.location },
-        worksFor: { '@type': 'Organization', name: profile.company },
-        knowsAbout: [
-        'Paid Advertising',
-        'Meta Ads',
-        'TikTok Ads',
-        'Social Media Marketing',
-        'SEO',
-        'Content Creation',
-        'Web Development']
-
+      '@type': 'Person',
+      name: profile.name,
+      jobTitle: profile.role,
+      description: seoMeta.description,
+      image: seoMeta.image,
+      email: profile.email,
+      telephone: profile.phone,
+      address: {
+        '@type': 'PostalAddress',
+        addressCountry: 'LK',
+        addressRegion: profile.location,
       },
-      {
-        '@type': 'Organization',
-        name: profile.company,
-        address: { '@type': 'PostalAddress', addressCountry: 'LK' },
-        brand: [
-        { '@type': 'Brand', name: 'Sofa Factory Outlet' },
-        { '@type': 'Brand', name: 'Decomo' },
-        { '@type': 'Brand', name: 'Empire Cars' }]
-
-      }]
-
+      knowsAbout: [
+        'Next.js',
+        'React',
+        'TypeScript',
+        'Node.js',
+        'Full Stack Development',
+        'MySQL',
+        'Docker',
+        'CI/CD',
+        'React Native',
+        'REST APIs',
+      ],
+      sameAs: [profile.social.github, profile.social.linkedin],
     };
 
     const scriptId = 'portfolio-structured-data';
