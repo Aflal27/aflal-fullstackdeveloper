@@ -27,9 +27,9 @@ export const roles: Role[] = [
   'Create content using AI video generation, Canva and CapCut',
   'Run Meta and TikTok sales and lead-generation campaigns',
   'Analyse target audiences',
-  'Drive approximately LKR 2M–5M monthly sales for Sofa Factory Outlet during the relevant period',
+  'Drive approximately LKR 1.5M–3M monthly sales for Sofa Factory Outlet during the relevant period',
   'Manage engagement and brand-awareness campaigns',
-  'Generate 150–200 inbound calls and 50–100 messages per month for Empire Cars through targeted Meta lead-generation campaigns',
+  'Generate 150–200 inbound calls and 50–100 messages per ad campaign for Empire Cars through targeted Meta lead-generation campaigns',
   'Upload products',
   'Manage on-page product SEO'],
 

@@ -117,10 +117,10 @@ function BrandNodesVisual() {
 const results = [
 {
   index: 'Result 01',
-  value: 'LKR 2M–5M',
+  value: 'LKR 1.5M–3M',
   label: 'Monthly Sales',
   brand: 'Sofa Factory Outlet',
-  body: 'Managed paid advertising campaigns supporting consistent monthly sales of approximately LKR 2M–5M, representing around 8–15 units during the relevant campaign period.',
+  body: 'Managed paid advertising campaigns supporting consistent monthly sales of approximately LKR 1.5M–3M, representing around 8–15 units during the relevant campaign period.',
   Visual: SalesRangeVisual,
   span: 'lg:col-span-7'
 },

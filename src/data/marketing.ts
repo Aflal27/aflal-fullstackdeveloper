@@ -113,9 +113,9 @@ export interface TrustMetric {
 
 export const trustMetrics: TrustMetric[] = [
 { value: '3', label: 'Brands managed' },
-{ value: 'LKR 2M–5M', label: 'Monthly sales generated', footnote: true },
+{ value: 'LKR 1.5M–3M', label: 'Monthly sales generated', footnote: true },
 { value: '5.5K–12.5K', label: 'Campaign reach per post', footnote: true },
-{ value: '150–200', label: 'Calls / month — Empire Cars', footnote: true },
+{ value: '150–200', label: 'Calls / month - Empire Cars', footnote: true },
 { value: 'Meta + TikTok', label: 'Paid campaigns' }];
 
 

@@ -56,7 +56,7 @@ export const caseStudies: CaseStudy[] = [
   summary:
   'Owned the full digital funnel: weekly content calendars, poster and AI video creative, Meta and TikTok sales campaigns, product uploads and on-page SEO.',
   results: [
-  { label: 'Monthly sales', value: 'LKR 2M–5M' },
+  { label: 'Monthly sales', value: 'LKR 1.5M–3M' },
   { label: 'Units per month', value: '8–15' },
   { label: 'Reach per engagement post', value: '5.5K–12.5K' }],
 
@@ -84,10 +84,10 @@ export const caseStudies: CaseStudy[] = [
   category: 'Automotive · Lead Generation',
   services: ['Meta Ads', 'Lead Generation', 'Social Media', 'Content'],
   summary:
-  'Targeted Meta lead-generation campaigns designed to drive direct phone calls and messages from car buyers. Creative and audience iterations based on campaign response, consistently generating 150–200 inbound calls and 50–100 messages per month.',
+  'Targeted Meta lead-generation campaigns designed to drive direct phone calls and messages from car buyers. Creative and audience iterations based on campaign response, consistently generating 150–200 inbound calls and 50–100 messages per ad campaign.',
   results: [
   { label: 'Inbound calls / month', value: '150–200' },
-  { label: 'Messages / month', value: '50–100' },
+  { label: 'Messages / per ad campaign', value: '50–100' },
   { label: 'Primary platform', value: 'Meta Ads' }],
 
   accent: 'coral'
@@ -131,7 +131,7 @@ export const webManagement: WebManagement = {
     {
       name: 'Sofa Factory Outlet',
       website: 'sofafactoryoutlet.lk',
-      description: 'Full funnel — paid ads, content, SEO and product management.'
+      description: 'Full funnel - paid ads, content, SEO and product management.'
     },
     {
       name: 'Decomo',
@@ -141,7 +141,7 @@ export const webManagement: WebManagement = {
     {
       name: 'Empire Cars',
       website: '',
-      description: 'Meta lead-gen campaigns driving 150–200 calls and 50–100 messages / month.'
+      description: 'Meta lead-gen campaigns driving 150–200 calls and 50–100 messages / per ad campaign.'
     }
   ]
 };
