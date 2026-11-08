@@ -171,7 +171,7 @@ export function Hero() {
               <div className="grain relative overflow-hidden rounded-[2.5rem] border border-white/70 bg-violet-100 shadow-lift">
                 <motion.img
                   src={photos.hero}
-                  alt={`${profile.name}, Full Stack Developer based in Sri Lanka`}
+                  alt={`${profile.name}, Full Stack Developer based in Qatar`}
                   style={reduce ? undefined : { x: imageX, y: imageY }}
                   className="aspect-[4/5] w-full scale-[1.06] object-cover object-top"
                   loading="eager"

@@ -4,10 +4,10 @@ import { Reveal } from './ui/Reveal';
 import { photos, profile } from '../data/site';
 
 const facts = [
-  { icon: MapPinIcon, label: 'Colombo, Sri Lanka' },
+  { icon: MapPinIcon, label: 'Qatar, Doha' },
   { icon: BriefcaseIcon, label: '2+ Years Experience' },
   { icon: GraduationCapIcon, label: 'HND Software Engineering' },
-  { icon: LanguagesIcon, label: 'English · Tamil' },
+  { icon: LanguagesIcon, label: 'English · Tamil · Arabic' },
 ];
 
 export function About() {

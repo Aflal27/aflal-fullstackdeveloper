@@ -12,39 +12,41 @@ export interface Role {
 
 export const roles: Role[] = [
   {
-    id: 'vynoq',
-    title: 'Full Stack Developer',
-    company: 'Vynoq Software Solutions',
-    location: 'Sri Lanka · Remote',
-    period: 'Feb 2024 - Nov 2025',
-    kind: 'primary',
-    positioning:
-      'End-to-end design, development and deployment of production web and mobile applications for real clients.',
-    responsibilities: [
-      'Designed, built and deployed web and mobile applications using Next.js, TypeScript, Node.js and MySQL',
-      'Managed VPS hosting and deployments for 4 production applications using Docker and CI/CD pipelines',
-      'Delivered projects end to end: requirements gathering, development, launch and ongoing maintenance',
-      'Built a mobile-friendly POS system with sales tracking, inventory management and customer data handling',
-      'Developed SEO-optimised product pages and e-commerce flows for client storefronts',
-      'Integrated REST APIs and third-party services including OpenAI API',
-    ],
-    tags: ['Next.js', 'TypeScript', 'Node.js', 'MySQL', 'React Native', 'Docker', 'CI/CD', 'VPS'],
-  },
-  {
     id: 'empire-holdings',
-    title: 'Digital Marketing Executive',
+    title: 'Web Design & Digital Marketing Executive',
     company: 'Empire Holdings Pvt Ltd',
     location: 'Sri Lanka',
-    period: 'Feb 2025 - Present',
+    period: 'Nov 2025 - Oct 2026',
+    kind: 'primary',
+    positioning:
+      'Develop and maintain websites for 3 group companies while running paid campaigns and managing digital presence end to end.',
+    responsibilities: [
+      'Develop, maintain and optimise websites and e-commerce platforms for 3 group companies (Sofa Factory Outlet, Decomo, Empire Cars)',
+      'Implement on-page and technical SEO to improve search visibility and site performance',
+      'Upload and manage e-commerce products with SEO-optimised content',
+      'Run Meta, TikTok and Google Ads lead-generation campaigns - driving 8–15 in-store sales per month for a furniture retail brand',
+      'Manage CRM records to track leads, calls and customer follow-ups',
+      'Manage social media (Facebook, Instagram, TikTok, Google Business Profile, YouTube) with AI video, Canva and CapCut',
+    ],
+    tags: ['Next.js', 'Meta Ads', 'TikTok Ads', 'Google Ads', 'SEO', 'CRM', 'Web Management', 'E-commerce'],
+  },
+  {
+    id: 'vynoq',
+    title: 'Full Stack Developer & Digital Marketing Executive',
+    company: 'Vynoq Software Solutions',
+    location: 'Sri Lanka',
+    period: 'May 2024 - Aug 2025',
     kind: 'secondary',
     positioning:
-      'Managing digital campaigns and company websites - including technical SEO and on-page optimisation.',
+      'End-to-end design, development and deployment of SEO-friendly websites and web applications for clients.',
     responsibilities: [
-      'Manage Meta Ads lead-generation campaigns for 3 group companies',
-      'Manage company websites including on-page and technical SEO',
-      'Drive inbound calls and messages from targeted audiences through paid campaigns',
+      'Designed, built and deployed SEO-friendly websites and web applications using Next.js, TypeScript, Node.js and MySQL',
+      'Built a mobile-friendly POS system with sales tracking, inventory management and customer data handling',
+      'Managed VPS hosting and deployments for 4 production applications using Docker and CI/CD pipelines',
+      'Ran Meta Ads lead-generation campaigns to attract business clients and onboard new web projects',
+      'Implemented on-page SEO and managed client social media content and promotional campaigns',
     ],
-    tags: ['Meta Ads', 'SEO', 'Web Management'],
+    tags: ['Next.js', 'TypeScript', 'Node.js', 'MySQL', 'Docker', 'CI/CD', 'VPS', 'Meta Ads', 'SEO'],
   },
 ];
 
@@ -63,10 +65,10 @@ export const techStack: TechCategory[] = [
     items: ['React.js', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'shadcn/ui'],
   },
   {
-    category: 'Mobile',
+    category: 'Mobile & Desktop',
     accent: 'text-electric-600',
     accentBg: 'bg-electric-50',
-    items: ['React Native (Expo)'],
+    items: ['React Native (Expo)', 'Capacitor', 'Tauri'],
   },
   {
     category: 'Backend',
@@ -78,19 +80,31 @@ export const techStack: TechCategory[] = [
     category: 'Databases',
     accent: 'text-amber-600',
     accentBg: 'bg-amber-50',
-    items: ['MySQL', 'MongoDB', 'Supabase'],
+    items: ['MySQL', 'MongoDB', 'Supabase', 'Firebase'],
   },
   {
-    category: 'DevOps & Tools',
+    category: 'DevOps & Hosting',
     accent: 'text-emerald-600',
     accentBg: 'bg-emerald-50',
-    items: ['VPS Hosting', 'Docker', 'CI/CD', 'Git & GitHub', 'Vercel'],
+    items: ['VPS Hosting', 'Docker', 'CI/CD', 'Git & GitHub', 'Vercel', 'AWS'],
+  },
+  {
+    category: 'SEO & E-commerce',
+    accent: 'text-pink-600',
+    accentBg: 'bg-pink-50',
+    items: ['On-page SEO', 'Technical SEO', 'Product SEO', 'E-commerce Management', 'Google Search Console', 'GA4'],
+  },
+  {
+    category: 'Digital Marketing',
+    accent: 'text-orange-600',
+    accentBg: 'bg-orange-50',
+    items: ['Meta Ads', 'Google Ads', 'TikTok Ads', 'Lead Generation', 'CRM Management', 'Social Media Management'],
   },
   {
     category: 'Other',
-    accent: 'text-pink-600',
-    accentBg: 'bg-pink-50',
-    items: ['OpenAI API', 'Agile', 'Java'],
+    accent: 'text-indigo-600',
+    accentBg: 'bg-indigo-50',
+    items: ['AI Automation', 'OpenAI API', 'Figma', 'Agile'],
   },
 ];
 
@@ -107,6 +121,21 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'vynoq',
+    name: 'Vynoq',
+    url: 'https://vynoq.com',
+    description:
+      'Company website designed, built and launched with on-page SEO and VPS hosting management.',
+    highlights: [
+      'Designed and built from scratch end to end',
+      'On-page SEO implementation',
+      'VPS hosting setup and management',
+    ],
+    tags: ['Next.js', 'TypeScript', 'SEO', 'VPS'],
+    accent: 'text-violet-600',
+    accentBg: 'bg-violet-50',
+  },
   {
     id: 'cherryvelle',
     name: 'Cherryvelle',
@@ -127,11 +156,11 @@ export const projects: Project[] = [
     name: 'Decomo',
     url: 'https://decomo.lk',
     description:
-      'E-commerce website for a custom sofa and furniture manufacturer with full shopping and enquiry flows.',
+      'E-commerce website for a custom sofa and furniture brand with product catalogue, WhatsApp enquiries and consultation booking.',
     highlights: [
       'Product catalogue with categories and cart',
-      'Customer accounts and order management',
       'WhatsApp enquiries and design consultation booking',
+      'SEO-optimised product pages',
     ],
     tags: ['Next.js', 'Node.js', 'MySQL', 'E-commerce'],
     accent: 'text-amber-600',
@@ -286,20 +315,26 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    qualification: 'Higher National Diploma in Software Engineering',
-    institution: 'ESOFT Metro Campus',
-    accreditation: 'Pearson Assured',
-    period: '2023 – 2025',
+    qualification: 'Higher National Diploma (HND) in Software Engineering',
+    institution: 'Esoft Metro Campus, Batticaloa, Sri Lanka',
+    accreditation: 'Pearson BTEC (UK)',
+    period: 'Oct 2023 – Sept 2025',
+  },
+  {
+    qualification: 'Diploma in English',
+    institution: 'Esoft Metro Campus, Batticaloa, Sri Lanka',
+    accreditation: 'Pearson BTEC (UK)',
+    period: '2024',
   },
   {
     qualification: 'Advanced Level (A/L) in Technology',
-    institution: 'Alighar Central College',
+    institution: 'Alighar Central College, Sri Lanka',
     period: '2021 – 2023',
   },
   {
     qualification: 'Diploma in IT',
-    institution: 'ESOFT Metro Campus',
-    accreditation: 'Pearson Assured',
+    institution: 'Esoft Metro Campus, Batticaloa, Sri Lanka',
+    accreditation: 'Pearson BTEC (UK)',
     period: '2019',
   },
 ];
